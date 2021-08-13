@@ -24,44 +24,38 @@
         "Sorry Another Tim",
         "Sorry Another Time"
       ];
-      ScrollTrigger.create({
-        trigger: "#js-fans2",
-        start: "top center",
-        onEnter: () => {
-          gsap
-            .timeline()
-            .to("#js-chat", {
-              y: 250,
-              duration: 1.2
-            })
-            .to("#js-chat", {
-              y: 150,
-              duration: 0.8
-            })
-            .to("#js-chat", {
-              y: 50,
-              duration: 0.8
-            })
-            .to("#js-chat", {
-              y: 0,
-              duration: 0.3
-            })
-            .to("#js-chat-letter", {
-              duration: 2.5,
-              onUpdate: () => {
-                if (counter >= letters.length) return;
-                document.getElementById("js-chat-letter").textContent =
-                  letters[counter];
-                counter++;
-              }
-            });
-        },
-        onLeaveBack: () => {
-          gsap.to("#js-chat", {
-            y: 500
-          });
-        }
-      });
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: "#js-fans2",
+            start: "top center"
+          }
+        })
+        .to("#js-chat", {
+          y: 250,
+          duration: 1.2
+        })
+        .to("#js-chat", {
+          y: 150,
+          duration: 0.8
+        })
+        .to("#js-chat", {
+          y: 50,
+          duration: 0.8
+        })
+        .to("#js-chat", {
+          y: 0,
+          duration: 0.3
+        })
+        .to("#js-chat-letter", {
+          duration: 2.5,
+          onUpdate: () => {
+            if (counter >= letters.length) return;
+            document.getElementById("js-chat-letter").textContent =
+              letters[counter];
+            counter++;
+          }
+        });
     }
     gsap.from("#js-phone-left, #js-phone-right", {
       scrollTrigger: {
