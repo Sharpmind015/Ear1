@@ -5,10 +5,17 @@
         <img src="assets/img/Felix.svg" alt="{{ site.title}} logo">
       </a>
       <div class="l-menu">
-        <ul id="js-menu" class="menu menu--mobile">
+        <ul class="menu menu--mobile">
           {% for link in site.data.navlink %}
           <li class="menu__item menu__item--mobile">
-            <a id="js-menu-link" href="#{{link.href}}" class="menu__link menu__link--mobile">{{link.name}}</a>
+            <a href="#{{link.href}}" class="menu__link menu__link--mobile">{{link.name}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <ul id="js-menu" class="menu-mobile">
+          {% for link in site.data.navlink %}
+          <li class="menu-mobile__item">
+            <a id="js-menu-link" href="#{{link.href}}" class="menu-mobile__link">{{link.name}}</a>
           </li>
           {% endfor %}
         </ul>
