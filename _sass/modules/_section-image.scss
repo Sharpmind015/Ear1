@@ -19,10 +19,18 @@
   }
   &__one {
     transform: rotate(-5.14deg);
-    z-index: 3;
+    z-index: 5;
   }
   &__two {
     transform: rotate(6.24deg);
+    z-index: 4;
+  }
+  &__three {
+    transform: rotate(-2.36deg);
+    z-index: 3;
+  }
+  &__four {
+    transform: rotate(0deg);
     z-index: 2;
   }
   @include media("<=600px") {
