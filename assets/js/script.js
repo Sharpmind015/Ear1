@@ -66,20 +66,12 @@
       duration: 1
     });
     const imageAnim = gsap.to("#js-fans1-image", {
-      x: "200%",
-      stagger: 1,
-      paused: true,
-      onComplete: () => {
-        gsap.set("#js-fans1-image", { x: 0 });
-      }
-    });
-    ScrollTrigger.create({
-      trigger: "#js-fans1",
-      start: "top end",
-      onEnter: () => {
-        imageAnim.play();
+      scrollTrigger: {
+        trigger: "#js-fans1",
+        start: "top end"
       },
-      onLeave: () => gsap.set("#js-fans1-image", { x: 0 })
+      x: "200%",
+      stagger: 1.2
     });
     chatAnimation();
     // gsap.fromTo(
