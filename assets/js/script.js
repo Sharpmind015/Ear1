@@ -6,23 +6,23 @@
       let counter = 0;
       const letters = [
         "S",
-        "So",
-        "Sor",
-        "Sorr",
-        "Sorry",
-        "Sorry ",
-        "Sorry A",
-        "Sorry An",
-        "Sorry Ano",
-        "Sorry Anot",
-        "Sorry Anoth",
-        "Sorry Anothe",
-        "Sorry Another",
-        "Sorry Another ",
-        "Sorry Another T",
-        "Sorry Another Ti",
-        "Sorry Another Tim",
-        "Sorry Another Time"
+        "o",
+        "r",
+        "r",
+        "y",
+        " ",
+        "A",
+        "n",
+        "o",
+        "t",
+        "h",
+        "e",
+        "r",
+        " ",
+        "T",
+        "i",
+        "m",
+        "e"
       ];
       gsap
         .timeline({
@@ -47,15 +47,19 @@
           y: 0,
           duration: 0.3
         })
-        .to("#js-chat-letter", {
-          duration: 2.5,
-          onUpdate: () => {
-            if (counter >= letters.length) return;
-            document.getElementById("js-chat-letter").textContent =
-              letters[counter];
-            counter++;
-          }
-        });
+        .to(
+          "#js-chat-letter",
+          {
+            duration: 2.5,
+            onUpdate: () => {
+              if (counter >= letters.length) return;
+              let text = document.createTextNode(letters[counter]);
+              document.getElementById("js-chat-letter").appendChild(text);
+              counter++;
+            }
+          },
+          "-=0.3"
+        );
     }
     gsap.from("#js-phone-left, #js-phone-right", {
       scrollTrigger: {
