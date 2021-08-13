@@ -72,10 +72,11 @@
     const imageAnim = gsap.to("#js-fans1-image", {
       scrollTrigger: {
         trigger: "#js-fans1",
-        start: "top end"
+        start: "top center",
+        scrub: 0.7
       },
       x: "200%",
-      stagger: 1.2
+      stagger: 0.2
     });
     chatAnimation();
     //popup animation
