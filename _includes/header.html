@@ -1,0 +1,40 @@
+<div class="l-highlight">
+  <header class="l-header">
+    <nav class="l-nav">
+      <a href="index.html" class="logo-inverse">
+        <img src="assets/img/Felix.svg" alt="{{ site.title}} logo">
+      </a>
+      <div class="l-menu">
+        <ul id="js-menu" class="menu menu--mobile">
+          {% for link in site.data.navlink %}
+          <li class="menu__item menu__item--mobile">
+            <a id="js-menu-link" href="#{{link.href}}" class="menu__link menu__link--mobile">{{link.name}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <button class="menu-btn" id="js-menu-btn">
+        <span class="menu-btn__open" id="js-menu-open">menu</span>
+        <span class="menu-btn__close" id="js-menu-close">close</span>
+      </button>
+    </nav>
+    <section class="l-hero">
+      <h1 class="main-heading">Build direct, <br/> meaningful <br/> connections.</h1>
+      <p class="text text--hero">Ear1 helps you connect directly with your favourite influencers for a small fee. What’s more? We assure you of getting
+        a reply.</p>
+      <div class="mobile-app">
+        <a href="#">
+          <img src="assets/img/google-play-badge.svg" alt="Download from google play store">
+        </a>
+        <a href="#">
+          <img class="mobile-app__img-right" src="assets/img/apple-store-badge.svg" alt="Download from apple store">
+        </a>
+      </div>
+      <div id="js-phone" class="phone">
+        <img id="js-phone-left" class="phone__image phone__image--left" src="assets/img/phone-left.png" alt="">
+        <img class="phone__image phone__image--middle" src="assets/img/phone-middle.png" alt="">
+        <img id="js-phone-right" class="phone__image phone__image--right" src="assets/img/phone-right.png" alt="">
+      </div>
+    </section>
+  </header>
+</div>

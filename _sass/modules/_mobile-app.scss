@@ -1,0 +1,25 @@
+.mobile-app {
+  &--features {
+    margin-top: 44px;
+  }
+  img {
+    @include media("<=600px") {
+      width: 200px;
+    }
+    @include media("<=400px") {
+      width: 150px;
+    }
+  }
+
+  &__img-right {
+    margin-left: 26px;
+    @include media("<=600px") {
+      margin-left: 0;
+    }
+  }
+  &__img-right--features {
+    @include media("<894px") {
+      margin-left: 0;
+    }
+  }
+}

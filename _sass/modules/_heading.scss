@@ -1,0 +1,79 @@
+.main-heading {
+  font-weight: bold;
+  font-size: pxToREM(130px);
+  line-height: 94.6%;
+  text-align: center;
+  letter-spacing: -0.06em;
+  @include media("<=desktop") {
+    font-size: calc(8vw + 20px);
+    line-height: 110%;
+  }
+  @include media(">=1600px") {
+    font-size: calc(8vw + 20px);
+    line-height: 100%;
+  }
+}
+.section-heading {
+  font-weight: 500;
+  line-height: 101.1%;
+  letter-spacing: -0.03em;
+}
+.section-heading--about {
+  font-size: pxToREM(72px);
+  width: 40vw;
+  @include media("<=999px") {
+    width: 70vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include media("<=768px") {
+    font-size: pxToREM(42px);
+    width: 100%;
+  }
+  @include media(">=1600px") {
+    font-size: calc(4vw + 20px);
+  }
+}
+.section-heading--secondary {
+  font-size: pxToREM(68px);
+  @include media("<=768px") {
+    font-size: pxToREM(32px);
+  }
+  @include media(">=1600px") {
+    font-size: calc(4vw + 20px);
+  }
+}
+.section-heading--features {
+  font-size: pxToREM(72px);
+  font-weight: bold;
+  line-height: 102.6%;
+  margin-bottom: 32px;
+  @include media("<=768px") {
+    font-size: pxToREM(42px);
+  }
+  @include media(">=1600px") {
+    font-size: calc(4vw + 20px);
+  }
+}
+.section-heading--top {
+  margin-top: 40px;
+}
+.section-heading--highlight {
+  color: $highlightBg;
+}
+.section-heading--dark {
+  color: $secondaryColor;
+}
+.subscription-heading {
+  font-size: pxToREM(30px);
+  line-height: 150%;
+  color: $secondaryColor;
+  margin-bottom: 24px;
+}
+.subscription-heading--normal {
+  font-weight: normal;
+}
+.subscription-heading--bold {
+  font-weight: bold;
+}

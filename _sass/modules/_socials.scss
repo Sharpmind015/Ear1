@@ -1,0 +1,9 @@
+.socials {
+  margin-top: 32px;
+  &__item:not(:last-child) {
+    margin-right: 24px;
+    @include media("<=999px") {
+      margin-right: 8px;
+    }
+  }
+}

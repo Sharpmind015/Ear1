@@ -1,0 +1,28 @@
+.menu-btn {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  height: 30px;
+  width: 60px;
+  background-color: transparent;
+  color: var(--text-white);
+  font-size: pxToREM(20px);
+  font-weight: 700;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 101;
+  @include media(">=999px") {
+    display: none;
+  }
+}
+.menu-btn__open,
+.menu-btn__close {
+  position: absolute;
+  left: 0;
+}
+.menu-btn__open {
+  top: 0;
+}
+.menu-btn__close {
+  top: -100%;
+}

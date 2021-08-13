@@ -1,0 +1,44 @@
+.features {
+  margin-left: 81px;
+  @include media("<=1200px") {
+    margin-left: 31px;
+  }
+  @include media("<=999px") {
+    margin-left: 0;
+  }
+  position: relative;
+  &__link {
+    position: absolute;
+    top: 0;
+    left: -32px;
+    @include media("<=999px") {
+      height: 90%;
+    }
+  }
+  &__item {
+    width: 33.4vw;
+    padding-left: 32px;
+    @include media("<=999px") {
+      width: 100%;
+      padding-left: 10px;
+    }
+  }
+  &__item:not(:first-child) {
+    margin-top: 80px;
+  }
+  &__heading {
+    font-weight: 500;
+    font-size: pxToREM(36px);
+    line-height: 116.6%;
+    letter-spacing: -0.03em;
+    color: $secondaryColor;
+  }
+  &__text {
+    font-weight: normal;
+    font-size: pxToREM(20px);
+    line-height: 150%;
+    color: $secondaryColor;
+    opacity: 0.6;
+    margin-top: 16px;
+  }
+}

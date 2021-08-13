@@ -1,0 +1,37 @@
+# Site settings
+name: Felix
+title: "Felix" # the name of your site, e.g. ACME Corp.
+description: 
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+email: akindejioluwaseun015@gmail.com
+cover: 
+logo: 
+social:
+  - title: email
+    url: mailto:akindejioluwaseun015@gmail.com
+  - title: twitter
+    url: https://twitter.com/deyjhi01
+  - title: instagram
+    url: 
+  - title: codepen
+    url: 
+  - title: github
+    url: https://github.com/Sharpmind015
+  - title: linkedin
+    url: 
+
+
+exclude:
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - '*.gemspec'
+  - 'README.md'
+
+keep_files:
+  - 'CNAME'
+  - '.git'
+  - '.gitignore'
+
+plugins_dir:
+

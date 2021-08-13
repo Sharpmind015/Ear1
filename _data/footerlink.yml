@@ -1,0 +1,22 @@
+- name: "Links"
+  links: 
+        - name: "Home"
+        - name: "For fans"
+        - name: "For influencers"
+        - name: "FAQ's"
+
+- name: "Get help"
+  links: 
+        - name: "Support"
+        - name: "FAQ's"
+        - name: "Partnership"
+
+- name: "Download"
+  links: 
+        - name: "Android"
+        - name: "IOS"
+
+- name: "Resources"
+  links: 
+        - name: "Terms of service"
+        - name: "Privacy policy"

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US " }}">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ " /assets/css/main.css " | relative_url }}">
+</head>
+
+<body>
+  {% include header.html %}
+  <main class="l-main">
+    {% include about.html %} {% include fans1.html %} {% include fans2.html %} {% include influencer1.html %} {% include influencer2.html
+    %} {% include features.html %} {% include footer.html %}
+  </main>
+
+  {{ content }}
+
+  <script src="assets/lib/gsap.min.js"></script>
+  <script src="assets/lib/ScrollTrigger.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

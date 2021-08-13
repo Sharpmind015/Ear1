@@ -1,0 +1,52 @@
+.subscription {
+  &__label {
+    position: relative;
+    display: block;
+    min-height: 55px;
+  }
+  &__input {
+    font-size: pxToREM(20px);
+    line-height: 150%;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(18, 18, 18, 0.3);
+    border-radius: 10px;
+    width: 100%;
+    padding: 13px 16px;
+    @include media("<=600px") {
+      font-size: pxToREM(18px);
+    }
+    @include media("<=425px") {
+      font-size: pxToREM(14px);
+    }
+  }
+  &__btn {
+    font-family: "Neue Haas Grotesk Display Pro 65 Medium";
+    font-style: normal;
+    font-weight: normal;
+    font-size: pxToREM(16px);
+    line-height: 100%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 21px 52px;
+    color: $textWhite;
+    background-color: $secondaryColor;
+    border: 0;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    @include media("<=600px") {
+      padding: 20px 32px;
+      font-size: pxToREM(14px);
+    }
+    @include media("<=425px") {
+      padding: 17px 22px;
+      font-size: pxToREM(14px);
+    }
+  }
+}

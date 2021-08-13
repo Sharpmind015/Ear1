@@ -1,0 +1,44 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+// @fontface
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro 65 Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("../fonts/Neue Haas Grotesk Display Pro 65 Medium"),
+    url("../fonts/NeueHaasDisplayMediu.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: $bodyBgColor;
+  color: $bodyTextColor;
+  font-family: $bodyFont;
+  overflow-x: hidden;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+section {
+  position: relative;
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+button {
+  outline: 0;
+  border: 0;
+}
+// button:focus {
+//   outline: 2px solid $bodyBgColor;
+// }

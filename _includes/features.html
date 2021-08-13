@@ -1,0 +1,35 @@
+<section class="l-features">
+  <div class="l-features-layout">
+    <h2 class="section-heading section-heading--secondary section-heading--highlight">The ear1 assurance</h2>
+  </div>
+  <ul class="features">
+    <img src="assets/img/Chain link.svg" alt="" class="features__link"> {% for item in site.data.features %}
+    <li class="features__item">
+      <h3 class="features__heading">{{item.title}}</h3>
+      <p class="features__text">{{item.feature}}</p>
+    </li>
+    {% endfor %}
+  </ul>
+  <div class="features1-image">
+    <img src="assets/img/features-phone-1.png" alt="Mobile phone showing notable features">
+  </div>
+  <div class="l-features-more l-highlight">
+    <div class="features2-image">
+      <img src="assets/img/features-phone-2.png" alt="Hand holding mobile phone showing notable features">
+    </div>
+    <div>
+      <div class="l-features-more-layout">
+        <h2 class="section-heading section-heading--features">Get ahead of your game</h2>
+        <p class="text">Save time and effort. Ear1 is your best choice.</p>
+      </div>
+      <div class="mobile-app mobile-app--features">
+        <a href="#">
+          <img src="assets/img/google-play-badge.svg" alt="Download from google play store">
+        </a>
+        <a href="#">
+          <img class="mobile-app__img-right mobile-app__img-right--features" src="assets/img/apple-store-badge.svg" alt="Download from apple store">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

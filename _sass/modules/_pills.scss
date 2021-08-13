@@ -1,0 +1,16 @@
+.pill {
+  display: inline-block;
+  padding: 8px 33px;
+  color: $bodyTextColor;
+  font-size: pxToREM(16px);
+  line-height: 116.6%;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+  border-radius: 50px;
+}
+.pill--fans {
+  background-color: $pillColor1;
+}
+.pill--influencer {
+  background-color: $pillColor2;
+}

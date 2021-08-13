@@ -1,0 +1,43 @@
+<footer id="js-footer" class="l-footer">
+  <div class="l-subscription">
+    <h3 class="subscription-heading"><span class="subscription-heading--bold">Be in the know.</span> <span class="subscription-heading--normal"> Get access to amazing offers and discounts</span></h3>
+    <form class="subscription">
+      <label class="subscription__label" for="subscription">
+        <input type="text" id="subscription" class="subscription__input" placeholder="Enter your email address">
+        <input type="submit" class="subscription__btn">
+      </label>
+    </form>
+  </div>
+  <div class="l-footer-links">
+    <div class="l-footer-layout">
+      <div class="l-logos">
+        <a href="#">
+          <img src="assets/img/footer-logo.png" alt="Image of felix logo" class="socials__icon">
+        </a>
+        <ul class="socials l-flex">
+          <li class="socials__item">
+            <a href="#"><img src="assets/img/Facebook.png" alt="Facebook icon"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#"><img src="assets/img/Twitter.png" alt="Twitter icon"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#"><img src="assets/img/Instagram.png" alt="Instagram icon"></a>
+          </li>
+        </ul>
+      </div>
+      <nav class="l-footer-layout">
+        {% for link in site.data.footerlink %}
+        <ul class="footer-menu">
+          <h4 class="footer-menu__heading">{{link.name}}</h4>
+          {% for item in link.links %}
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">{{item.name}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      </nav>
+    </div>
+  </div>
+</footer>

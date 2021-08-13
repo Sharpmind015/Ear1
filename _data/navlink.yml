@@ -1,0 +1,14 @@
+- name: "Home"
+  href: ""
+
+- name: "For Fans"
+  href: "fans"
+
+- name: "For influencers"
+  href: "influencers"
+
+- name: "Features"
+  href: "features"
+
+- name: "FAQ's"
+  href: "faq"
