@@ -17,9 +17,13 @@
     top: 0;
     left: 0;
   }
-  img:not(:last-child) {
+  &__one {
     transform: rotate(-5.14deg);
     z-index: 3;
+  }
+  &__two {
+    transform: rotate(6.24deg);
+    z-index: 2;
   }
   @include media("<=600px") {
     width: 300px;
