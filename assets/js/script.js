@@ -74,20 +74,19 @@
       stagger: 1.2
     });
     chatAnimation();
-    // gsap.fromTo(
-    //   "#js-popup",
-    //   { scale: 0, x: 0, y: 0 },
-    //   {
-    //     scrollTrigger: {
-    //       trigger: "#js-influencer1",
-    //       start: "top center"
-    //     },
-    //     scale: 1.1,
-    //     x: -40,
-    //     y: 80,
-    //     duration: 1
-    //   }
-    // );
+    //popup animation
+    gsap.fromTo(
+      "#js-popup",
+      { scale: 0 },
+      {
+        scrollTrigger: {
+          trigger: "#js-influencer2",
+          start: "top center"
+        },
+        scale: 1,
+        duration: 0.7
+      }
+    );
     // Pin effect for large screens only
     ScrollTrigger.matchMedia({
       "(min-width: 1000px)": function() {
