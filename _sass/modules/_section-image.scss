@@ -103,6 +103,9 @@
   position: absolute;
   top: 275px;
   right: 158px;
+  &__mobile {
+    display: none;
+  }
   @include media("<desktop") {
     right: 50px;
   }
@@ -111,7 +114,24 @@
   }
   @include media("<=999px") {
     position: static;
-    margin-top: 30px;
+    width: 100%;
+    min-height: 362px;
+    display: flex;
+    justify-content: center;
+    transform: translate(-30px, 100px);
+    &__mobile {
+      display: block;
+      max-width: 432px;
+      @include media("<=720px") {
+        max-width: 270px;
+      }
+    }
+    &__desktop {
+      display: none;
+    }
+  }
+  @include media("<=425px") {
+    transform: translate(-19px, 100px);
   }
 }
 .features2-image {
