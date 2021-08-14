@@ -112,7 +112,7 @@
         gsap.to("#js-influencer1", {
           scrollTrigger: {
             trigger: "#js-influencer1",
-            endTrigger: "#js-influencer-end",
+            endTrigger: "#js-influencer1",
             pin: true
           }
         });
