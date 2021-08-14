@@ -165,6 +165,7 @@
   }
 }
 .l-footer {
+  position: relative;
   padding: 63px 120px 120px 80px;
   @include media("<=999px") {
     padding: 63px 60px 100px 60px;

@@ -82,13 +82,14 @@
     //popup animation
     gsap.fromTo(
       "#js-popup",
-      { scale: 0 },
+      { y: -400, opacity: 0 },
       {
         scrollTrigger: {
           trigger: "#js-influencer2",
-          start: "top center"
+          start: "top start"
         },
-        scale: 1,
+        y: 0,
+        opacity: 1,
         duration: 0.7
       }
     );
@@ -112,7 +113,7 @@
         gsap.to("#js-influencer1", {
           scrollTrigger: {
             trigger: "#js-influencer1",
-            endTrigger: "#js-influencer1",
+            endTrigger: "#js-footer",
             pin: true
           }
         });
