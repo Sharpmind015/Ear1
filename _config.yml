@@ -1,6 +1,6 @@
 # Site settings
-name: Felix
-title: "Felix" # the name of your site, e.g. ACME Corp.
+name: Ear1
+title: "Ear1" # the name of your site, e.g. ACME Corp.
 description: 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
