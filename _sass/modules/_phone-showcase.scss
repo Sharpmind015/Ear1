@@ -1,43 +1,64 @@
 .phone {
   position: relative;
-  margin-top: 16px;
+  margin-top: 76px;
   width: 100%;
   height: 538px;
-  margin: 0 auto;
   overflow: hidden;
   @include media("<=840px") {
     height: 400px;
+  }
+  @include media("<=768px") {
+    margin-top: 30px;
   }
   @include media("<=674px") {
     height: 300px;
   }
   @include media("<=520px") {
     height: 200px;
+    margin-top: 20px;
   }
   &__image {
     position: absolute;
-    max-width: 51.2vw;
+    max-width: 35.5vw;
     height: auto;
     &--left {
-      left: 12.6%;
-      transform: translate(-12.6%, 195px) rotate(-22.73deg);
+      left: 36%;
+      transform: translate(-36%, 195px) rotate(-22.73deg);
       @include media("<=674px") {
-        transform: translate(-12.6%, 90px) rotate(-22.73deg);
+        transform: translate(-36%, 130px) rotate(-22.73deg);
+      }
+      @include media("<=520px") {
+        transform: translate(-36%, 50px) rotate(-22.73deg);
+      }
+      @include media("<=360px") {
+        transform: translate(-36%, 90px) rotate(-22.73deg);
       }
     }
     &--middle {
-      left: 34%;
-      transform: translateX(-34%);
+      left: 50%;
+      transform: translateX(-50%);
       z-index: 3;
-    }
-    &--right {
-      right: 9.75%;
-      transform: translate(-9.75%, 143px) rotate(22.73deg);
-      @include media("<=674px") {
-        transform: translate(-9.75%, 50px) rotate(22.73deg);
+      @include media("<=999px") {
+        transform: translate(-50%, 70px);
       }
       @include media("<=520px") {
-        transform: translate(-9.75%, 60px) rotate(22.73deg);
+        transform: translate(-50%, 5px);
+      }
+      @include media("<=360px") {
+        transform: translate(-50%, 35px);
+      }
+    }
+    &--right {
+      right: 36%;
+      transform: translate(36%, 195px) rotate(22.73deg);
+      @include media("<=674px") {
+        transform: translate(36%, 130px) rotate(22.73deg);
+      }
+      @include media("<=520px") {
+        transform: translate(36%, 50px) rotate(22.73deg);
+      }
+      @include media("<=360px") {
+        transform: translate(36%, 90px) rotate(22.73deg);
       }
     }
   }
