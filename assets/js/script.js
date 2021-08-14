@@ -94,7 +94,7 @@
     );
     // Pin effect for large screens only
     ScrollTrigger.matchMedia({
-      "(min-width: 1000px)": function() {
+      "(min-width: 1025px)": function() {
         gsap.to("#js-fans1", {
           scrollTrigger: {
             trigger: "#js-fans1",

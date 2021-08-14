@@ -61,8 +61,24 @@
   }
 }
 .influencer1-image {
+  position: relative;
+  width: 50%;
+  min-height: 362px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
   @include media("<=999px") {
-    margin-bottom: 60px;
+    width: 100%;
+  }
+  img {
+    max-width: 432px;
+    @include media("<=999px") {
+      position: absolute;
+    }
+    @include media("<=720px") {
+      max-width: 270px;
+      top: 50px;
+    }
   }
 }
 .influencer2-image {
