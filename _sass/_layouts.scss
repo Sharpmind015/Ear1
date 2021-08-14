@@ -270,7 +270,7 @@
   flex-wrap: wrap;
 }
 .l-align-top {
-  @include media(">999") {
+  @include media(">999px") {
     align-self: flex-start;
   }
 }
