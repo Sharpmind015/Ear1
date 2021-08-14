@@ -86,7 +86,7 @@
       {
         scrollTrigger: {
           trigger: "#js-influencer2",
-          start: "top start"
+          start: "top center"
         },
         y: 0,
         opacity: 1,
